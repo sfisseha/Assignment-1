@@ -1,0 +1,278 @@
+/* Feel free to edit CSS of body if you'd like. We provide you the light gray background color and font family in the body styling */
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  background-color: #e6ecf0;
+}
+
+img{
+  max-width: 100%;
+}
+
+.skip-link{
+  display: none;
+}
+
+.icons{
+  display: none;
+}
+
+.header{
+  background-color: white;
+  justify-content: space-around;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 46px;
+  z-index: 100;
+  margin:0;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 46px;
+  z-index: 100;
+}
+
+.logo{
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 10;
+  height: 46px;
+  padding: 10px;
+}
+
+.button{
+  position: fixed;
+  top: 0;
+  left: -1;
+  right: 0;
+  z-index: 10;
+  margin-top: 2px;
+  background-color: #4AB3F4;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px;
+  width: 50px;
+  height: 20px;
+  text-align: center;
+}
+
+
+li {
+  float: left;
+  display: inline;
+  margin-left: 30px;
+}
+
+.link{
+  color: grey;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link:hover{
+  color: #4AB3F4;
+  text-decoration: underline;
+}
+
+.content-wrapper{
+  display: flex;
+  flex: 1;
+  max-width: 1190px;
+  margin: 56px auto;
+}
+
+.content-left{
+  background-color: white;
+  order: 1;
+  width: 290px;
+  height: 280px;
+  border: 5px solid #e6ecf0;
+}
+
+.left-box{
+  position: relative;
+  display: flex;
+}
+
+.row1{
+  background-color: black;
+  position: absolute;
+}
+
+.banner-image{
+   width: 290px;
+   height: 150px;
+}
+
+.row2-image{
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  width: 290px;
+}
+
+.left-profile{
+  border-radius:50%;
+  border: 2px solid white;
+  width:80px;
+  height:80px;
+  background-color: lightgrey;
+}
+.row2{
+  max-width: 100px;
+}
+.row2-text{
+   display: inline-block;
+   position: absolute;
+   top: 145px;
+   left: 115px;
+   justify-content: space-around;
+}
+
+.row3{
+  background-color: white;
+  position: absolute;
+  z-index: 0;
+  top: 210px;
+  left: 18px;
+}
+
+th, td{
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+}
+
+td{
+  font-weight: bold;
+  font-size: 18px;
+  color: #4AB3F4;
+}
+
+th{
+  font-weight: bold;
+  font-size: 14px;
+  color: grey;
+}
+
+.content-center{
+  background-color: white;
+  flex: 1;
+  order: 2;
+  border: 5px solid #e6ecf0;
+}
+
+.container{
+  display: flex;
+  border-bottom: 1px solid #e6ecf0;
+  min-height: 51px;
+}
+
+.profile{
+  width: 70px;
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.profile-image{
+  border-radius: 50%;
+  width:48px;
+  height: 48px;
+}
+
+.text{
+  flex: 1;
+}
+
+.content-right{
+  background-color: white;
+  order: 3;
+  width: 290px;
+  height: 220px;
+  border: 5px solid #e6ecf0;
+  padding-left: 8px;
+}
+
+.right-box{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  border-bottom: 1px solid #e6ecf0;
+  padding: 7px;
+}
+
+.profile-image1{
+  grid-row: 1/3;
+  grid-column: 1;
+  display: inline;
+  border-radius: 50%;
+  width:48px;
+  height: 48px;
+  justify-content: left;
+}
+
+.description{
+  grid-row: 1;
+  grid-column:2;
+  display: inline-block;
+  text-align: left;
+  width: 212.16px;
+  height:56px;
+}
+
+.button1{
+  background-color: white;
+  color: #4AB3F4;
+  border: 1px solid #4AB3F4;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  width: 70px;
+  height: 20px;
+  grid-row: 2;
+  grid-column: 2;
+  padding-top: 2px;
+}
+
+
+@media (max-width: 1200px){
+
+  .link{
+    display:none;
+   }
+
+  .icons{
+    display: inline;
+  }
+
+  .content-right{
+    display: none;
+  }
+}
+
+@media (max-width: 800px){
+  .content-right{
+    display: none;
+  }
+
+  .icons{
+    display:none;
+  }
+
+  .name{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+
+}
